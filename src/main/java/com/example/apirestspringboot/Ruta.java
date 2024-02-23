@@ -13,6 +13,7 @@ public class Ruta {
     private String nombre;
     private String origen;
     private String destino;
+    @Column(name = "num_paradas")
     private Integer numParadas;
     private Integer inconveniente;
 
