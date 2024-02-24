@@ -49,16 +49,6 @@ public class RutaController {
         return repository.getRutaByNumParadas(paradas);
     }
 
-    @GetMapping("/paradas/maximo/{paradas}")
-    public Ruta getRutaByNumParadasIsGreaterThan(@PathVariable Integer paradas){
-        return repository.getRutaByNumParadasIsGreaterThan(paradas);
-    }
-
-    @GetMapping("/paradas/minimo/{paradas}")
-    public Ruta getRutaByNumParadasIsLessThan(@PathVariable Integer paradas){
-        return repository.getRutaByNumParadasIsLessThan(paradas);
-    }
-
     @GetMapping("/inconveniente/{inconveniente}")
     public List<Ruta> getRutaByInconveniente(@PathVariable Integer inconveniente){
         return repository.getRutaByInconveniente(inconveniente);

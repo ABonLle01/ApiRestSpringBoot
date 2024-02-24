@@ -17,10 +17,6 @@ public interface RutasRepository extends JpaRepository<Ruta, Long> {
 
     public List<Ruta> getRutaByNumParadas(int numParadas);
 
-    public Ruta getRutaByNumParadasIsGreaterThan(int numParadas);
-
-    public Ruta getRutaByNumParadasIsLessThan(int numParadas);
-
     public List<Ruta> getRutaByInconveniente(int inconveniente);
 
     @Query("Select r.nombre from Ruta r")
