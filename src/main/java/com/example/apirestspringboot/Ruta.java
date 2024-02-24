@@ -3,6 +3,9 @@ package com.example.apirestspringboot;
 import jakarta.persistence.*;
 import lombok.Data;
 
+/**
+ * Clase que representa una ruta de autobus
+ */
 @Data
 @Entity
 @Table(name="rutasautobus")
